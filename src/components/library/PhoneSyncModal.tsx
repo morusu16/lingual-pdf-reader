@@ -7,11 +7,11 @@ interface PhoneSyncModalProps {
 
 export const PhoneSyncModal: React.FC<PhoneSyncModalProps> = ({ onClose }) => {
   const [copied, setCopied] = useState(false);
-  const targetUrl = 'https://life-circuits-approve-sudden.trycloudflare.com';
+  const targetUrl = 'https://morusu16.github.io/lingual-pdf-reader/';
   const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&su=${encodeURIComponent('Polyglot PDF Reader スマホ用URL')}&body=${encodeURIComponent(
-    '■ Polyglot PDF Reader スマホ用URL\n' +
-    'https://life-circuits-approve-sudden.trycloudflare.com\n\n' +
-    '※スマホのChromeまたはSafariで開くと、PWAアプリとしてそのままインストールできます！'
+    '■ Polyglot PDF Reader 公式URL\n' +
+    'https://morusu16.github.io/lingual-pdf-reader/\n\n' +
+    '※スマホのChromeまたはSafariで開いて「アプリをインストール」または「ホーム画面に追加」をすると、永続的にPWAアプリとして使えます！'
   )}`;
 
   const handleCopy = () => {
