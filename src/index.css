@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Tailwind CSS v4 でのクラスベースのダークモード有効化 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* ダークモード時の明示的な背景色と文字色 */
+html.dark {
+  background-color: #0b0f19 !important;
+  color: #f1f5f9 !important;
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #0b0f19 !important;
+  color: #f1f5f9 !important;
+}
+
+/* セピアテーマ */
+html.sepia {
+  background-color: #f8f1e5 !important;
+  color: #4a3e31 !important;
+  color-scheme: light;
+}
+
+html.sepia body {
+  background-color: #f8f1e5 !important;
+  color: #4a3e31 !important;
+}
+
+html.sepia .bg-white,
+html.sepia .bg-white\/90,
+html.sepia .bg-white\/95,
+html.sepia .bg-white\/80 {
+  background-color: #fbf7ee !important;
+}
+
+html.sepia .bg-slate-50,
+html.sepia .bg-slate-50\/60 {
+  background-color: #f4ecdc !important;
+}
+
+html.sepia .bg-slate-100 {
+  background-color: #ede2cd !important;
+}
+
+html.sepia .border-slate-200,
+html.sepia .border-slate-200\/80,
+html.sepia .border-slate-200\/90 {
+  border-color: #dfd1b8 !important;
+}
+
+html.sepia .border-slate-100 {
+  border-color: #e8dcc7 !important;
+}
+
+html.sepia .text-slate-900 {
+  color: #2e2418 !important;
+}
+
+html.sepia .text-slate-800 {
+  color: #3d3122 !important;
+}
+
+html.sepia .text-slate-700 {
+  color: #564633 !important;
+}
+
+html.sepia .text-slate-600 {
+  color: #6b5742 !important;
+}
+
+html.sepia .text-slate-500,
+html.sepia .text-slate-400 {
+  color: #8c765c !important;
+}
